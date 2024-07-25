@@ -1,10 +1,11 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import { router } from './providers/router';
-import { createPinia } from 'pinia';
+import { createApp } from "vue";
+import App from "./App.vue";
+import { router } from "./providers/router";
+import { createPinia } from "pinia";
 
+//prettier-ignore
 const app = createApp(App)
     .use(createPinia())
-    .use(router)
+    .use(router);
 
 export default app;
